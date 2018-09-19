@@ -1,0 +1,42 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/mine/mine"
+    ],
+    "window": {
+        "navigationBarTitleText": "微信接口功能演示"
+    },
+    "tabBar": {
+        "color": "#8a8a8a",
+        "selectedColor": "#e16531",
+        "borderStyle": "black",
+        "list": [
+            {
+                "selectedIconPath": "/imgs/home-active.png",
+                "iconPath": "/imgs/home.png",
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "selectedIconPath": "/imgs/message-active.png",
+                "iconPath": "/imgs/message.png",
+                "pagePath": "pages/logs/logs",
+                "text": "消息"
+            },
+            {
+                "selectedIconPath": "/imgs/mine-active.png",
+                "iconPath": "/imgs/mine.png",
+                "pagePath": "pages/mine/mine",
+                "text": "我的"
+            }
+        ]
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "connectSocket": 10000,
+        "uploadFile": 10000,
+        "downloadFile": 10000
+    },
+    "debug": true
+}

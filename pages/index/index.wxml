@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="userinfo">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        <block wx:else>
+            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
+    </view>
+    <button bindtap="showPageRoute" type="primary" class="button-test">获取页面路由</button>
+    <button bindtap="changeMotto" type="primary" class="button-test">改变数据（setData）</button>
+    <button bindtap="showPageRoutes" type="primary" class="button-test">获取路由栈</button>
+    <view class="motto-data">
+        <text>{{motto}}</text>
+    </view>
+</view>
